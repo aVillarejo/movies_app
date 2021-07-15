@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Image, View } from 'react-native'
+import { COLORS } from '../constants'
 
 const TabIcon = ({ focused, icon }) => {
   return (
@@ -9,7 +10,7 @@ const TabIcon = ({ focused, icon }) => {
         style={
         [
           styles.iconStyle,
-          { tintColor: focused ? 'red' : 'gray' }
+          { tintColor: focused ? COLORS.primary : COLORS.gray }
         ]
       }
       />

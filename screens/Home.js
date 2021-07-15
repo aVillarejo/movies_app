@@ -1,11 +1,26 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import * as React from 'react'
+import { StyleSheet, SafeAreaView, ScrollView } from 'react-native'
 
-const Home = () => {
+import { Header, NewSeasonSection } from '../components'
+import { COLORS, dummyData } from '../constants/'
+
+const Home = ({ navigation }) => {
   return (
-    <View style={styles.container}>
-      <Text>Home</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      {/* Header */}
+      <Header />
+
+      {/* Home Feed */}
+      <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
+
+        {/* Carrusel */}
+        <NewSeasonSection data={dummyData.newSeason} />
+
+        {/* Continue Watching - Horizontal List */}
+
+      </ScrollView>
+
+    </SafeAreaView>
   )
 }
 
@@ -14,7 +29,6 @@ export default Home
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center'
+    backgroundColor: COLORS.black
   }
 })
