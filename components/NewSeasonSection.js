@@ -38,7 +38,7 @@ const NewSeasonSection = ({ data }) => {
             source={item.thumbnail}
             style={{
               width: SIZES.width * 0.85,
-              height: SIZES.width * 0.85,
+              height: SIZES.width * 0.80,
               justifyContent: 'flex-end'
             }}
           >
@@ -140,5 +140,5 @@ const NewSeasonSection = ({ data }) => {
 export default NewSeasonSection
 
 const styles = StyleSheet.create({
-  contentContainerStyle: { marginTop: SIZES.radius }
+  contentContainerStyle: { marginTop: SIZES.base }
 })

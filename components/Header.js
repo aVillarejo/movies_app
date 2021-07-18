@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, View, Image, TouchableOpacity } from 'react-native'
 import { COLORS, icons, SIZES } from '../constants'
 
-const Header = ({ children }) => {
+const Header = () => {
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.headerButton}>

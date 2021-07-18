@@ -8,10 +8,11 @@
 
 
 ## Screenshots
-> app in progress
-<!-- 
-![Home](./docs/screenshots/home.png) 
--->
+---
+#### Home Screen
+![Home](./doc/screenshots/homescreen.png)
+---
+
 
 ----
 

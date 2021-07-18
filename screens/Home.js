@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { StyleSheet, SafeAreaView, ScrollView } from 'react-native'
 
-import { Header, NewSeasonSection } from '../components'
+import { Header, NewSeasonSection, ContinueWatchingSection } from '../components'
 import { COLORS, dummyData } from '../constants/'
 
 const Home = ({ navigation }) => {
@@ -11,12 +11,15 @@ const Home = ({ navigation }) => {
       <Header />
 
       {/* Home Feed */}
-      <ScrollView contentContainerStyle={{ paddingBottom: 100 }}>
+      <ScrollView
+        contentContainerStyle={{ paddingBottom: 100 }}
+        showsVerticalScrollIndicator={false}
+      >
 
         {/* Carrusel */}
         <NewSeasonSection data={dummyData.newSeason} />
-
         {/* Continue Watching - Horizontal List */}
+        <ContinueWatchingSection data={dummyData.continueWatching} />
 
       </ScrollView>
 
