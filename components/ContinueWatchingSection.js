@@ -3,7 +3,7 @@ import { FlatList, Image, StyleSheet, Text, View, TouchableWithoutFeedback } fro
 import { useNavigation } from '@react-navigation/native'
 
 import { COLORS, FONTS, icons, SIZES } from '../constants'
-import { Progressbar } from './'
+import { ProgressBar } from './'
 
 const ContinueWatchingSection = ({ data }) => {
   const navigation = useNavigation()
@@ -36,7 +36,7 @@ const ContinueWatchingSection = ({ data }) => {
           <Text style={{ marginTop: SIZES.base, color: COLORS.white, ...FONTS.h4 }}>{item.name}</Text>
 
           {/* ProgressBar */}
-          <Progressbar
+          <ProgressBar
             containerStyle={{ marginTop: SIZES.radius }}
             barStyle={{ height: 3 }}
             barPercentage={item.overallProgress}

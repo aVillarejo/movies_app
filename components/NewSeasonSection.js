@@ -8,11 +8,13 @@ import {
   StyleSheet,
   View
 } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
 
 import { COLORS, FONTS, icons, SIZES } from '../constants/'
 import { Profiles, RenderDots } from './'
 
 const NewSeasonSection = ({ data }) => {
+  const navigation = useNavigation()
   const scrollX = useRef(new Animated.Value(0)).current
 
   const keyExtractor = i => `${i.id}`
@@ -24,7 +26,9 @@ const NewSeasonSection = ({ data }) => {
 
   const renderItem = ({ item, index }) => {
     return (
-      <TouchableWithoutFeedback>
+      <TouchableWithoutFeedback
+        onPress={() => navigation.navigate('MovieDetail', { selectedMovie: item })}
+      >
         <View
           style={{
             alignItems: 'center',

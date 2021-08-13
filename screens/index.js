@@ -1,3 +1,4 @@
 import Home from './Home'
+import MovieDetail from './MovieDetail'
 
-export { Home }
+export { Home, MovieDetail }

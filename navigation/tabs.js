@@ -3,9 +3,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 import { TabIcon } from '../components'
 import { icons } from '../constants'
-
 // SCREENS
 import { Home } from '../screens'
+
+const { home, playButton, search, profile } = icons
 
 const Tab = createBottomTabNavigator()
 const tabBarOptions = {
@@ -31,7 +32,7 @@ const Tabs = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               focused={focused}
-              icon={icons.home}
+              icon={home}
             />
           )
         }}
@@ -43,7 +44,7 @@ const Tabs = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               focused={focused}
-              icon={icons.playButton}
+              icon={playButton}
             />
           )
         }}
@@ -55,7 +56,7 @@ const Tabs = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               focused={focused}
-              icon={icons.search}
+              icon={search}
             />
           )
         }}
@@ -67,7 +68,7 @@ const Tabs = () => {
           tabBarIcon: ({ focused }) => (
             <TabIcon
               focused={focused}
-              icon={icons.profile}
+              icon={profile}
             />
           )
         }}

@@ -5,8 +5,25 @@ import { COLORS, SIZES } from '../constants'
 const Progressbar = ({ containerStyle, barStyle, barPercentage }) => {
   return (
     <View style={{ ...containerStyle }}>
-      <View style={[styles.defaultBarStyle, { backgroundColor: COLORS.gray, ...barStyle }]} />
-      <View style={[styles.defaultBarStyle, { backgroundColor: COLORS.primary, width: barPercentage, ...barStyle }]} />
+      <View
+        style={[
+          styles.defaultBarStyle,
+          {
+            backgroundColor: COLORS.gray,
+            ...barStyle
+          }
+        ]}
+      />
+      <View
+        style={[
+          styles.defaultBarStyle,
+          {
+            backgroundColor: COLORS.primary,
+            width: barPercentage,
+            ...barStyle
+          }
+        ]}
+      />
     </View>
   )
 }

@@ -5,7 +5,8 @@ import Profiles from './Profiles'
 import Avatar from './Avatar'
 import RenderDots from './RenderDots'
 import ContinueWatchingSection from './ContinueWatchingSection'
-import Progressbar from './ProgressBar'
+import ProgressBar from './ProgressBar'
+import Icon from './Icon'
 
 export {
   Avatar,
@@ -15,5 +16,6 @@ export {
   Profiles,
   RenderDots,
   ContinueWatchingSection,
-  Progressbar
+  ProgressBar,
+  Icon
 }
