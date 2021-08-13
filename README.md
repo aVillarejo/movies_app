@@ -6,15 +6,15 @@
 
 ###### Design by [Risang Kuncoro](https://dribbble.com/shots/14777334-Movie-Streaming-App)
 
+---
 
 ## Screenshots
----
 #### Home Screen
-![Home](./doc/screenshots/homescreen.png)
+## ![Home](./doc/screenshots/homescreen.png)
+
+#### Detail Screen
+## ![Detail](./doc/screenshots/detailscreen.png)
 ---
-
-
-----
 
 ## Features
 - Movies Feed
@@ -23,7 +23,8 @@
 - Movie details Screen
 
 ## Next steps
-- Home Screen
+- Home Screen refactor
+- Detail Screen refactor
 - Play Now Screen
 - Profile Screen
 - Search Component
